@@ -1,0 +1,2 @@
+record_type,buyer_alias,sku,gpu_count,region,minimum_network_gbps,required_sla_percent,available_from,term_months,maximum_usd_hr,credit_grade,confidence,source_classification,source_reference
+buyer_mandate,Example Buyer,h100-sxm,192,us-east,400,99.9,2026-11-01,6,2.78,A-,permissioned,permissioned_private,internal reference

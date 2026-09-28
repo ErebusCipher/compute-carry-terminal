@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "powergpu-public-index",
+      "classification": "public",
+      "enabled": true,
+      "refresh_target": "daily",
+      "license": "CC BY 4.0",
+      "output": "market reference only",
+      "fields_not_available": ["region", "cluster topology", "network", "SLA", "delivery date", "negotiated term"]
+    }
+  ],
+  "invariants": [
+    "Public records are never executable quotes.",
+    "Permissioned private records retain their source classification and source reference.",
+    "Synthetic records cannot be blended into a market index or presented as commercial inventory."
+  ]
+}

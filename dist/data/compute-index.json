@@ -1,0 +1,871 @@
+{
+  "generated_at": "2026-09-28T18:34:02.375Z",
+  "source": {
+    "name": "PowerGPU Cloud GPU Price Index",
+    "url": "https://powergpu.ai/gpu-price-index.json",
+    "snapshot_date": "2026-09-28",
+    "currency": "USD",
+    "unit": "per GPU-hour",
+    "methodology": "public GPU marketplace median × 0.70, rounded down; interruptible = on_demand × 0.50; reserved = on_demand × 0.65",
+    "license": "CC BY 4.0 — attribute to PowerGPU (https://powergpu.ai/gpu-price-index)",
+    "attribution": "Source: PowerGPU Cloud GPU Price Index. Provider observations are public list-price references, not executable quotes."
+  },
+  "records": [
+    {
+      "sku": "h100-sxm",
+      "name": "NVIDIA H100 SXM",
+      "vram_gb": 80,
+      "architecture": "Hopper",
+      "tier": "flagship",
+      "market_median_usd_hr": 2.5225,
+      "provider_reference_usd_hr": {
+        "on_demand": 1.765,
+        "interruptible": 0.882,
+        "reserved": 1.147
+      },
+      "market_90d": {
+        "change_percent": 8.6,
+        "low_usd": 1.495,
+        "high_usd": 2.4895
+      },
+      "provider_observations": [
+        {
+          "provider": "Prime Intellect",
+          "usd_hr": 1.65,
+          "note": "from; provider-set, up to $4.00 by provider/region",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Novita AI",
+          "usd_hr": 1.7,
+          "note": "8-GPU bare-metal node, per GPU; a dedicated-endpoint listing cites $1.99/GPU-hr (checked 2026-09-04)",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Akash Network",
+          "usd_hr": 2.04,
+          "note": "from; mixed form factors, marketplace bid, ~$2.52/hr average",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "io.net",
+          "usd_hr": 2.1,
+          "note": "from; varies by supplier and location",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Genesis Cloud",
+          "usd_hr": 2.19,
+          "note": "8× node $17.52/hr ÷ 8; secondhand, not confirmed on genesiscloud.com directly",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Vast.ai",
+          "usd_hr": 2.21,
+          "note": "verified datacenter host, on-demand (unverified hosts run lower)",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "TensorDock",
+          "usd_hr": 2.25,
+          "note": "from; hosts set prices",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Cudo Compute",
+          "usd_hr": 2.25,
+          "note": "per Cudo's own 2025 blog post, flat on-demand; the live pricing page (checked 2026-09-04) shows \"Quote on request\" instead",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Jarvislabs",
+          "usd_hr": 2.69,
+          "note": "spot up to −56%",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Massed Compute",
+          "usd_hr": 2.89,
+          "note": "SXM5 80 GB, 1×",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Vultr",
+          "usd_hr": 2.99,
+          "note": "8× HGX H100 bare metal, $23.92/hr ÷ 8",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Scaleway",
+          "usd_hr": 3.17,
+          "note": "H100-1-80G, 1× GPU 80 GB, Paris/Warsaw · €2.73/hr → USD @1.1627 (2026-09-04)",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Hyperbolic",
+          "usd_hr": 3.19,
+          "note": "80 GB, on-demand, weekly-refreshed rate",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Hyperstack",
+          "usd_hr": 3.2,
+          "note": "SXM · reserved from $2.72",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "DataCrunch",
+          "usd_hr": 3.25,
+          "note": "1× H100 SXM5 80GB",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "RunPod",
+          "usd_hr": 3.29,
+          "note": "Secure Cloud · Community $2.69",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Lightning AI",
+          "usd_hr": 3.5,
+          "note": "single-GPU on-demand — 8-GPU Studios reported as low as $1.99/GPU; another tracker cites $3.29 (checked 2026-09-04)",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Nebius",
+          "usd_hr": 3.85,
+          "note": "HGX H100, per-GPU slice: 16 vCPU / 200GB RAM",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Crusoe Cloud",
+          "usd_hr": 3.9,
+          "note": "HGX H100, 80 GB",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Modal",
+          "usd_hr": 3.95,
+          "note": "$0.001097/s",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Lambda",
+          "usd_hr": 3.99,
+          "note": "1×–8× SXM instances, up to $4.29 by config",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Together AI",
+          "usd_hr": 3.99,
+          "note": "GPU Clusters on-demand, HGX H100 SXM, promotional rate (list $5.49)",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Paperspace",
+          "usd_hr": 4.41,
+          "note": "GPU Droplet, 1× H100",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Replicate",
+          "usd_hr": 5.49,
+          "note": "$0.001525/s",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "CoreWeave",
+          "usd_hr": 6.16,
+          "note": "8× HGX H100 node $49.24/hr ÷ 8",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "AWS",
+          "usd_hr": 6.88,
+          "note": "p5.48xlarge on-demand, us-east-1, per GPU · Capacity Blocks ~$5.19",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Oracle Cloud",
+          "usd_hr": 10,
+          "note": "BM.GPU.H100.8, 8× GPU bare metal, $80/hr node ÷ 8",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Google Cloud",
+          "usd_hr": 11.06,
+          "note": "a3-highgpu-8g, us-central1 list, per GPU",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Microsoft Azure",
+          "usd_hr": 12.29,
+          "note": "ND H100 v5, 8 GPUs = $98.32/hr, East US, per GPU",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        }
+      ],
+      "availability_signal": 37,
+      "source_page": "https://powergpu.ai/gpu/h100-sxm",
+      "data_quality": {
+        "score": 95,
+        "classification": "strong public reference",
+        "missing_fields": [
+          "region",
+          "cluster topology",
+          "network",
+          "SLA",
+          "deployment date"
+        ],
+        "executable": false
+      }
+    },
+    {
+      "sku": "h200",
+      "name": "NVIDIA H200",
+      "vram_gb": 141,
+      "architecture": "Hopper",
+      "tier": "flagship",
+      "market_median_usd_hr": 4.8035,
+      "provider_reference_usd_hr": {
+        "on_demand": 3.362,
+        "interruptible": 1.681,
+        "reserved": 2.185
+      },
+      "market_90d": {
+        "change_percent": 26.9,
+        "low_usd": 2.532,
+        "high_usd": 4.4555
+      },
+      "provider_observations": [
+        {
+          "provider": "Genesis Cloud",
+          "usd_hr": 2.8,
+          "note": "from; secondhand, not confirmed on genesiscloud.com directly",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Vast.ai",
+          "usd_hr": 3.82,
+          "note": "on-demand marketplace median; verified-host listings from ~$3.70",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Hyperstack",
+          "usd_hr": 3.99,
+          "note": "SXM",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Jarvislabs",
+          "usd_hr": 3.99,
+          "note": "SXM · spot up to −56%",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Hyperbolic",
+          "usd_hr": 3.99,
+          "note": "141 GB, on-demand, weekly-refreshed rate",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "DataCrunch",
+          "usd_hr": 4,
+          "note": "1× H200 SXM5 141GB",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Crusoe Cloud",
+          "usd_hr": 4.29,
+          "note": "HGX H200, 141 GB",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Akash Network",
+          "usd_hr": 4.45,
+          "note": "from; 141 GB HBM3e SXM, lowest rate found across providers surveyed",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Paperspace",
+          "usd_hr": 4.47,
+          "note": "GPU Droplet, 1× H200",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Nebius",
+          "usd_hr": 4.5,
+          "note": "HGX H200, per-GPU slice: 16 vCPU / 200GB RAM",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Modal",
+          "usd_hr": 4.54,
+          "note": "$0.001261/s",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "RunPod",
+          "usd_hr": 4.59,
+          "note": "Secure · Community $3.59",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Replicate",
+          "usd_hr": 5.49,
+          "note": "$0.001525/s — same listed rate as H100",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Together AI",
+          "usd_hr": 5.99,
+          "note": "GPU Clusters on-demand, HGX H200 SXM",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "CoreWeave",
+          "usd_hr": 6.31,
+          "note": "8× HGX H200 node $50.44/hr ÷ 8",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Oracle Cloud",
+          "usd_hr": 10,
+          "note": "BM.GPU.H200.8, 8× GPU bare metal, $80/hr node ÷ 8",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        }
+      ],
+      "availability_signal": 23,
+      "source_page": "https://powergpu.ai/gpu/h200",
+      "data_quality": {
+        "score": 95,
+        "classification": "strong public reference",
+        "missing_fields": [
+          "region",
+          "cluster topology",
+          "network",
+          "SLA",
+          "deployment date"
+        ],
+        "executable": false
+      }
+    },
+    {
+      "sku": "b200",
+      "name": "NVIDIA B200",
+      "vram_gb": 192,
+      "architecture": "Blackwell",
+      "tier": "flagship",
+      "market_median_usd_hr": 9.3766,
+      "provider_reference_usd_hr": {
+        "on_demand": 6.563,
+        "interruptible": 3.281,
+        "reserved": 4.265
+      },
+      "market_90d": {
+        "change_percent": 97.6,
+        "low_usd": 3.3,
+        "high_usd": 7.5
+      },
+      "provider_observations": [
+        {
+          "provider": "Genesis Cloud",
+          "usd_hr": 3.75,
+          "note": "from; secondhand, not confirmed on genesiscloud.com directly",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Massed Compute",
+          "usd_hr": 5.43,
+          "note": "8× SXM6 node only, $43.46/hr ÷ 8",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Hyperbolic",
+          "usd_hr": 5.99,
+          "note": "180 GB, on-demand, weekly-refreshed rate",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "DataCrunch",
+          "usd_hr": 6.11,
+          "note": "1× B200 SXM6 180GB",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Modal",
+          "usd_hr": 6.25,
+          "note": "$0.001736/s",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "RunPod",
+          "usd_hr": 6.79,
+          "note": "Secure · Community $5.98",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Vast.ai",
+          "usd_hr": 6.8,
+          "note": "on-demand marketplace median, Jul 2026; interruptible from $5.94",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Lambda",
+          "usd_hr": 6.99,
+          "note": "1×; 8× from $6.69",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Nebius",
+          "usd_hr": 7.15,
+          "note": "HGX B200, per-GPU slice: 20 vCPU / 224GB RAM",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Together AI",
+          "usd_hr": 8.19,
+          "note": "GPU Clusters on-demand, HGX B200",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "CoreWeave",
+          "usd_hr": 8.6,
+          "note": "8× HGX B200 node $68.80/hr ÷ 8",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        }
+      ],
+      "availability_signal": 27,
+      "source_page": "https://powergpu.ai/gpu/b200",
+      "data_quality": {
+        "score": 95,
+        "classification": "strong public reference",
+        "missing_fields": [
+          "region",
+          "cluster topology",
+          "network",
+          "SLA",
+          "deployment date"
+        ],
+        "executable": false
+      }
+    },
+    {
+      "sku": "l40s",
+      "name": "NVIDIA L40S",
+      "vram_gb": 48,
+      "architecture": "Ada Lovelace",
+      "tier": "datacenter",
+      "market_median_usd_hr": 0.7347,
+      "provider_reference_usd_hr": {
+        "on_demand": 0.514,
+        "interruptible": 0.257,
+        "reserved": 0.334
+      },
+      "market_90d": {
+        "change_percent": 0.9,
+        "low_usd": 0.35,
+        "high_usd": 0.4
+      },
+      "provider_observations": [
+        {
+          "provider": "Vast.ai",
+          "usd_hr": 0.48,
+          "note": "on-demand, broad marketplace median (not verified-only)",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Massed Compute",
+          "usd_hr": 0.88,
+          "note": "1×",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Prime Intellect",
+          "usd_hr": 0.91,
+          "note": "from; third-party aggregate, provider-set",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "RunPod",
+          "usd_hr": 0.99,
+          "note": "Secure · Community $0.79",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "DataCrunch",
+          "usd_hr": 1.37,
+          "note": "1× L40S 48GB",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Crusoe Cloud",
+          "usd_hr": 1.5,
+          "note": "48 GB",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Nebius",
+          "usd_hr": 1.55,
+          "note": "from, AMD host; Intel host from $1.82",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Paperspace",
+          "usd_hr": 1.57,
+          "note": "GPU Droplet",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Vultr",
+          "usd_hr": 1.67,
+          "note": "Cloud GPU",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "OVHcloud",
+          "usd_hr": 1.69,
+          "note": "l40s-1-gpu flavor, 1× GPU 48 GB, Public Cloud GRA11",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Scaleway",
+          "usd_hr": 1.71,
+          "note": "L40S-1-48G, 1× GPU 48 GB, Paris · €1.47/hr → USD @1.1627 (2026-09-04)",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "AWS",
+          "usd_hr": 1.86,
+          "note": "g6e.xlarge",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Modal",
+          "usd_hr": 1.95,
+          "note": "$0.000542/s",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "CoreWeave",
+          "usd_hr": 2.25,
+          "note": "8× node $18.00/hr ÷ 8",
+          "checked": "2026-09-03",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Oracle Cloud",
+          "usd_hr": 3.5,
+          "note": "BM.GPU.L40S.4, 4× GPU bare metal, per GPU",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        },
+        {
+          "provider": "Replicate",
+          "usd_hr": 3.51,
+          "note": "$0.000975/s",
+          "checked": "2026-09-04",
+          "region": null,
+          "topology": null,
+          "sla": null,
+          "normalization_status": "partial"
+        }
+      ],
+      "availability_signal": 119,
+      "source_page": "https://powergpu.ai/gpu/l40s",
+      "data_quality": {
+        "score": 95,
+        "classification": "strong public reference",
+        "missing_fields": [
+          "region",
+          "cluster topology",
+          "network",
+          "SLA",
+          "deployment date"
+        ],
+        "executable": false
+      }
+    }
+  ]
+}

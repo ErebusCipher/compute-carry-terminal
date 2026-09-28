@@ -1,0 +1,2 @@
+record_type,supplier_alias,sku,gpu_count,region,cluster_topology,network_gbps,sla_percent,available_from,term_months,usd_hr,cancellation_rights,credit_grade,confidence,source_classification,source_reference
+supplier_quote,Example Supplier,h100-sxm,256,us-east,8x SXM HGX nodes,400,99.9,2026-11-01,12,1.72,none,A-,permissioned,permissioned_private,internal reference

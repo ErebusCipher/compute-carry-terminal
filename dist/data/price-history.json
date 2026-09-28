@@ -1,0 +1,24 @@
+{
+  "source": {
+    "name": "PowerGPU Cloud GPU Price Index",
+    "url": "https://powergpu.ai/gpu-price-index.json",
+    "snapshot_date": "2026-09-28",
+    "currency": "USD",
+    "unit": "per GPU-hour",
+    "methodology": "public GPU marketplace median × 0.70, rounded down; interruptible = on_demand × 0.50; reserved = on_demand × 0.65",
+    "license": "CC BY 4.0 — attribute to PowerGPU (https://powergpu.ai/gpu-price-index)",
+    "attribution": "Source: PowerGPU Cloud GPU Price Index. Provider observations are public list-price references, not executable quotes."
+  },
+  "observations": [
+    {
+      "date": "2026-09-28",
+      "captured_at": "2026-09-28T18:34:02.375Z",
+      "prices": {
+        "h100-sxm": 2.5225,
+        "h200": 4.8035,
+        "b200": 9.3766,
+        "l40s": 0.7347
+      }
+    }
+  ]
+}

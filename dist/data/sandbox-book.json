@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "classification": "synthetic fixture",
+    "purpose": "Demonstrates the private-book data model and underwriting workflow. It is not based on counterparties, quotes, capacity, or mandates.",
+    "updated_at": "2026-09-29T00:00:00.000Z"
+  },
+  "suppliers": [
+    {
+      "id": "SUP-001",
+      "alias": "Supplier North",
+      "sku": "h100-sxm",
+      "gpu_count": 256,
+      "region": "us-east",
+      "cluster_topology": "8x SXM HGX nodes",
+      "network_gbps": 400,
+      "sla_percent": 99.9,
+      "available_from": "2026-11-01",
+      "term_months": 12,
+      "lease_usd_hr": 1.72,
+      "cancellation_rights": "none",
+      "credit_grade": "A-",
+      "confidence": "simulated"
+    },
+    {
+      "id": "SUP-002",
+      "alias": "Supplier Fjord",
+      "sku": "b200",
+      "gpu_count": 128,
+      "region": "eu-north",
+      "cluster_topology": "8x SXM HGX nodes",
+      "network_gbps": 400,
+      "sla_percent": 99.5,
+      "available_from": "2026-10-15",
+      "term_months": 6,
+      "lease_usd_hr": 4.18,
+      "cancellation_rights": "30-day notice after month 3",
+      "credit_grade": "BBB+",
+      "confidence": "simulated"
+    },
+    {
+      "id": "SUP-003",
+      "alias": "Supplier Coast",
+      "sku": "h200",
+      "gpu_count": 64,
+      "region": "us-west",
+      "cluster_topology": "8x SXM HGX nodes",
+      "network_gbps": 200,
+      "sla_percent": 99.5,
+      "available_from": "2026-10-01",
+      "term_months": 9,
+      "lease_usd_hr": 2.96,
+      "cancellation_rights": "none",
+      "credit_grade": "A",
+      "confidence": "simulated"
+    }
+  ],
+  "buyers": [
+    {
+      "id": "BUY-001",
+      "alias": "Training Lab Alpha",
+      "sku": "h100-sxm",
+      "gpu_count": 192,
+      "regions": ["us-east", "us-central"],
+      "minimum_network_gbps": 400,
+      "required_sla_percent": 99.9,
+      "term_months": 6,
+      "maximum_usd_hr": 2.78,
+      "credit_grade": "A-",
+      "urgency": "30 days",
+      "confidence": "simulated"
+    },
+    {
+      "id": "BUY-002",
+      "alias": "Inference Platform Beta",
+      "sku": "b200",
+      "gpu_count": 96,
+      "regions": ["eu-north", "eu-west"],
+      "minimum_network_gbps": 400,
+      "required_sla_percent": 99.5,
+      "term_months": 3,
+      "maximum_usd_hr": 6.72,
+      "credit_grade": "BBB+",
+      "urgency": "14 days",
+      "confidence": "simulated"
+    },
+    {
+      "id": "BUY-003",
+      "alias": "Research Group Gamma",
+      "sku": "h200",
+      "gpu_count": 64,
+      "regions": ["us-west"],
+      "minimum_network_gbps": 200,
+      "required_sla_percent": 99.5,
+      "term_months": 6,
+      "maximum_usd_hr": 4.46,
+      "credit_grade": "A",
+      "urgency": "45 days",
+      "confidence": "simulated"
+    }
+  ]
+}

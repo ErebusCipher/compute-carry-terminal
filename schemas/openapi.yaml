@@ -1,0 +1,37 @@
+openapi: 3.1.0
+info:
+  title: Compute Carry Terminal API
+  version: 0.1.0
+  description: Permissioned API contract. Public observations cannot create executable deals.
+paths:
+  /v1/quotes/import:
+    post:
+      summary: Import a permissioned supplier quote
+      security: [{ bearerAuth: [] }]
+      responses: { '202': { description: Accepted for validation }, '422': { description: Schema or provenance failure } }
+  /v1/mandates/import:
+    post:
+      summary: Import a permissioned buyer mandate
+      security: [{ bearerAuth: [] }]
+      responses: { '202': { description: Accepted for validation }, '422': { description: Schema or provenance failure } }
+  /v1/deals/{dealId}/screen:
+    post:
+      summary: Compute compatibility, non-fungibility, and required control gates
+      security: [{ bearerAuth: [] }]
+      parameters: [{ name: dealId, in: path, required: true, schema: { type: string, format: uuid } }]
+      responses: { '200': { description: Screen result } }
+  /v1/deals/{dealId}/approvals:
+    post:
+      summary: Record a role-bound approval decision
+      security: [{ bearerAuth: [] }]
+      parameters: [{ name: dealId, in: path, required: true, schema: { type: string, format: uuid } }]
+      responses: { '201': { description: Approval recorded }, '409': { description: Invalid state transition } }
+  /v1/deals/{dealId}/execute:
+    post:
+      summary: Submit an approved deal to an execution provider using an idempotency key
+      security: [{ bearerAuth: [] }]
+      parameters: [{ name: dealId, in: path, required: true, schema: { type: string, format: uuid } }]
+      responses: { '202': { description: Execution requested }, '409': { description: Required approvals or limits absent } }
+components:
+  securitySchemes:
+    bearerAuth: { type: http, scheme: bearer, bearerFormat: JWT }

@@ -1,0 +1,10 @@
+{
+  "name": "compute-carry-terminal",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "ingest:public": "node scripts/ingest-public-prices.mjs",
+    "validate:private-book": "node scripts/validate-private-book.mjs",
+    "test": "node tests/matching.test.mjs && node tests/deal-lifecycle.test.mjs && node tests/execution-provider.test.mjs"
+  }
+}
